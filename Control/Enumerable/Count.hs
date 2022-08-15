@@ -77,7 +77,6 @@ instance Semigroup (Count a) where
 
 instance Monoid (Count a) where
   mempty = empty
-  mappend = (<|>)
 
 instance Sized Count where
   pay    = Count . (0:) . count
