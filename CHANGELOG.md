@@ -4,4 +4,4 @@
     - Test with GHC 8.6 through 9.2
     - Update maintainer and source repository information
 
-    - r1 (15 August 2022): allow `base-4.17`, `template-haskell-2.19`, GHC 9.4
+    - r2 (15 August 2022): allow `base-4.17`, `template-haskell-2.19`, GHC 9.4
