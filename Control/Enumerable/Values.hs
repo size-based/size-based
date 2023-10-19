@@ -56,7 +56,7 @@ instance Applicative MaxSize where
   pure _ = MaxSize [()]
   MaxSize [] <*> _  = empty
   _ <*> MaxSize []  = empty
-  f <*> x = MaxSize $ tail (runMaxSize f ++ runMaxSize x)
+  f <*> x = MaxSize $ drop 1 (runMaxSize f ++ runMaxSize x)
 
 instance Alternative MaxSize where
   empty = MaxSize []

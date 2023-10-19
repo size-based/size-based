@@ -109,12 +109,12 @@ infixl 4 </>
 (Count xs0)  </> (Count (y:ys0)) = Count ds where
   ds = go xs0 (reversals' ys0)
   go [] yrs          = []
-  go (xs) []         = go' xs (tail ds)
+  go (xs) []         = go' xs (drop 1 ds)
   go (x:xs) (yr:yrs) =  ((x - conv yr ds) `div` y) : go xs yrs
 
   revy = reverse ys0
   go' [] _ = []
-  go' (x:xs) (ds') = ((x - (conv revy ds' )) `div` y) : go' xs (tail ds')
+  go' (x:xs) (ds') = ((x - (conv revy ds' )) `div` y) : go' xs (drop 1 ds')
 
 -- Yap is the inverse of pay.
 yap :: Count a -> Count a
