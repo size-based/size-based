@@ -33,5 +33,5 @@ library
   build-depends:       base >=4.9 && <5,
                        dictionary-sharing >= 0.1 && < 1.0,
                        testing-type-modifiers >= 0.1 && < 1.0,
-                       template-haskell  >=2.5 && <2.22
+                       template-haskell  >=2.5 && <2.23
   default-language:    Haskell2010
