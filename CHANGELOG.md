@@ -1,3 +1,8 @@
+* 0.1.3.2-r1 (18 June 2024)
+
+    - Allow `template-haskell-2.22`
+    - Test with GHC 9.10
+
 * 0.1.3.2 (20 Oct 2023)
 
     - Test with GHC 9.8
