@@ -63,7 +63,7 @@ class Typeable a => Enumerable a where
 access :: (Enumerable a, Sized f, Typeable f) => Shareable f a
 access = unsafeAccess enumerate
 
--- | Guarantees local sharing. All enumerations are shared inside each invokation of local, but may not be shared between them.
+-- | Guarantees local sharing. All enumerations are shared inside each invocation of local, but may not be shared between them.
 {-#INLINE local#-}
 local :: (Typeable f, Sized f, Enumerable a) => f a
 local = run access (unsafeNewRef ())
