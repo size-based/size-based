@@ -1,3 +1,7 @@
+* 0.1.3.3 (28 Sep 2024)
+
+    - Documentation fix (thanks to @jvoigtlaender)
+
 * 0.1.3.2-r1 (18 June 2024)
 
     - Allow `template-haskell-2.22`
