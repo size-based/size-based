@@ -1,3 +1,7 @@
+* 0.1.3.3-r1 (9 Dec 2024)
+
+    - Test with GHC 9.12
+
 * 0.1.3.3 (28 Sep 2024)
 
     - Documentation fix (thanks to @jvoigtlaender)
